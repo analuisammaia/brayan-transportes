@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Brayan Transportes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        :root {
+            --preto: #0D0D0D;
+            --cinza: #2B2B2B;
+            --vermelho: #E10600;
+            --amarelo: #F2B705;
+            --branco: #FFFFFF;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #fdfcda;
+            color: #222;
+        }
+
+        /* ================= HEADER ================= */
+        header {
+            position: relative;
+            background: linear-gradient(to right, var(--preto), var(--cinza));
+            color: var(--branco);
+            padding: 60px 20px;
+            overflow: hidden;
+        }
+
+        /* LOGO DE FUNDO */
+        header::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: url("logobtsite.jpeg") no-repeat center;
+            background-size: 300px;
+            opacity: 0.15; /* transparência da logo */
+            z-index: 0;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+            max-width: 1000px;
+            margin: auto;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: var(--amarelo);
+        }
+
+        header p {
+            font-size: 1.1em;
+            margin-top: 8px;
+        }
+
+        /* ================= CONTAINER ================= */
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .section {
+            background: var(--branco);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+
+        .section h2 {
+            color: var(--vermelho);
+            margin-bottom: 15px;
+        }
+
+        .image-box {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .image-box img {
+            max-width: 100%;
+            border-radius: 15px;
+        }
+
+        .steps li {
+            margin-bottom: 10px;
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .cta a {
+            background-color: var(--vermelho);
+            color: var(--branco);
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .cta a:hover {
+            background-color: var(--amarelo);
+            color: var(--preto);
+        }
+
+        footer {
+            background-color: var(--preto);
+            color: var(--branco);
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-content">
+        <h1>Brayan Transportes</h1>
+        <p>Segurança, pontualidade e confiança para o seu transporte</p>
+    </div>
+</header>
+
+<div class="container">
+
+    <div class="image-box">
+        <img src="caminhao.jpeg" alt="Caminhão da Brayan Transportes">
+    </div>
+
+    <div class="section">
+        <h2>Sobre nós</h2>
+        <p>
+            A <strong>Brayan Transportes</strong> oferece serviços de transporte com responsabilidade,
+            cuidado e compromisso com o cliente.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Como marcar horário</h2>
+        <ol class="steps">
+            <li>Entre em contato pelo WhatsApp ou telefone</li>
+            <li>Informe o local de saída e destino</li>
+            <li>Escolha a data e o horário desejado</li>
+            <li>Confirmamos tudo com você rapidamente</li>
+        </ol>
+
+        <div class="cta">
+            <a href="https://w.app/qjegkl" target="_blank">
+                Marcar horário agora
+            </a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Contato</h2>
+        <p>
+            📞 Telefone: (53) 99211-9889<br>
+            💬 WhatsApp: (53) 9211-9889<br>
+            📍 Atendemos sua região
+        </p>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 - Brayan Transportes | Todos os direitos reservados
+</footer>
+
+</body>
+</html>
